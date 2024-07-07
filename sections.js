@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function init() {
         dots = [];
-        for (let i = 0; i < 50; i++) { // Reduced the number of particles for a sparser effect
+        for (let i = 0; i < 150; i++) { // Reduced the number of particles for a sparser effect
             let radius = Math.random() * 2;
             let x = Math.random() * (canvas.width - radius * 2) + radius;
             let y = Math.random() * (canvas.height - radius * 2) + radius;

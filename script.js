@@ -103,7 +103,7 @@ function connect() {
             let distance = ((dotsInRadius[i].x - dotsInRadius[j].x) * (dotsInRadius[i].x 
                 - dotsInRadius[j].x)) + ((dotsInRadius[i].y - dotsInRadius[j].y) * (dotsInRadius[i].y - dotsInRadius[j].y));
 
-            if (distance < (mouse.radius / 2.4) ** 2) {
+            if (distance < (mouse.radius / 4) ** 2) {
                 ctx.strokeStyle = dotsInRadius[i].color;
                 ctx.lineWidth = 1;
                 ctx.beginPath();

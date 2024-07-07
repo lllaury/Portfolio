@@ -1,0 +1,41 @@
+.NavBar {
+    position: fixed;
+    align-content: center;
+    width: 60%;
+    /* background: linear-gradient(to right, rgb(31, 31, 31), rgb(33, 37, 43)); */
+    background-color: rgba(15, 20, 24, 0.99);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    /* Rounded edges */
+    top: 3%;
+    left: 20%;
+}
+
+.NavBar nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.NavBar.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.NavBar nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    /* Optional: rounded edges for the links */
+}
+
+.NavBar nav a:hover {
+    color: rgb(55, 196, 177);
+    text-shadow: rgba(55, 196, 177, 0.7);
+    box-shadow: rgba(55, 196, 177, 0.7);
+}

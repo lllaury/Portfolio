@@ -1,0 +1,86 @@
+/* Container to center the projects */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style for each project card */
+.project {
+    display: flex; /* Make the project card a flex container */
+    flex-direction: row; /* Align children in a row */
+    background-color: rgb(30, 35, 39);
+    color: white;
+    width: 75%;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    align-items: left;
+}
+
+/* Style for project description */
+.project-description {
+    flex: 1; /* Allow the description to take up available space */
+    text-align: left;
+    align-items: left;
+}
+
+.project-description h4 {
+    color: rgb(194, 194, 194);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+.project-description h2 {
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+/* Style for project image */
+.project-image {
+    flex: 1; /* Allow the image to take up available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For positioning child elements */
+    overflow: hidden;
+    padding: 0;
+}
+
+.project-image img {
+    position: absolute; /* Absolute positioning */
+    width: 160%; /* Increase the size of the image */
+    height: auto;
+    bottom: -30px; /* Move the image down */
+    right: -65%; /* Move the image to the right */
+    border-radius: 10px; /* Apply some border radius to match the card style */
+    margin: 0;
+}
+
+.project-button {
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(55, 196, 177);
+    width: 20%;
+    padding: 2%;
+    font-size: 1.3em;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.project-button:hover {
+    background-color: rgba(55, 196, 177, 0.3);
+    box-shadow: 0 0 15px 1px rgba(55, 196, 177, 0.752);
+}
+
+.column {
+    margin-left: 0;
+    padding-left: 0;
+}

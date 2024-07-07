@@ -1,0 +1,171 @@
+#sections-container {
+    position: relative;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#about .row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* Centering the columns */
+    align-items: center;
+    align-content: center;
+}
+
+#about p {
+    position: relative;
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+    /* Centering the paragraph */
+}
+
+.section {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent;
+    margin: 20px 0;
+    border-radius: 8px;
+    z-index: 1;
+    width: 100%;
+    line-height: 1.8;
+    padding-top: 10%;
+    padding-bottom: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: var(--text-color, #fff);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-icon:hover {
+    transform: scale(1.2);
+}
+
+.tech-icon .icon {
+    max-width: 4rem;
+    /* Set the maximum width */
+    max-height: 4rem;
+    /* Set the maximum height */
+    width: 100%;
+    /* Ensure the icon scales correctly */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.tech-icon .tech-name {
+    margin-top: 0.5rem;
+}
+
+.express {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+/* Contact form styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(30, 35, 39);
+    /* Dark grey background for form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    /* Label color */
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(115, 126, 136);;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#contact-form input {
+    background-color: rgb(23, 25, 27);
+    /* Darker background for input */
+    color: white;
+    /* Input text color */
+}
+
+#contact-form textarea {
+    background-color: rgb(23, 25, 27);
+    /* Darker background for textarea */
+    color: white;
+    /* Textarea text color */
+}
+
+#contact-form button {
+    margin-top: 3%;
+    padding: 10px 20px;
+    background-color: rgb(78, 78, 110);
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.1s;
+    font-size: 1rem;
+    
+    position: relative;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(55, 196, 177);
+    padding: 2%;
+    font-size: 1.3em;
+}
+
+#contact-form button:hover {
+    background-color: rgba(55, 196, 177, 0.3);
+    box-shadow: 0 0 15px 1px rgba(55, 196, 177, 0.752);
+}

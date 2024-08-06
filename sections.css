@@ -23,7 +23,6 @@
 
 .section {
     position: relative;
-    padding: 60px 20px;
     text-align: center;
     background: transparent;
     margin: 20px 0;
@@ -168,4 +167,67 @@
 #contact-form button:hover {
     background-color: rgba(55, 196, 177, 0.3);
     box-shadow: 0 0 15px 1px rgba(55, 196, 177, 0.752);
+}
+
+/* Media queries for smaller displays */
+@media (max-width: 768px) {
+    #about p {
+        width: 90%;
+        margin-bottom: 20px; /* Add margin to separate from tech icons */
+        word-wrap: break-word; /* Ensure text wraps within the container */
+        overflow-wrap: break-word; /* Ensure text wraps within the container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    .column {
+        width: 100%;
+        float: none;
+    }
+
+    .tech-icons {
+        flex-direction: row; /* Ensure tech icons are laid out horizontally */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: center; /* Center the icons */
+    }
+
+    #contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #about {
+        padding-right: 10%;
+    }
+    #about .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about p {
+        width: 100%;
+        margin-bottom: 20px; /* Add margin to separate from tech icons */
+        padding: 5%;
+        word-wrap: break-word; /* Ensure text wraps within the container */
+        overflow-wrap: break-word; /* Ensure text wraps within the container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    .section {
+        padding-top: 5%;
+    }
+
+    .tech-icon .icon {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    #contact-form {
+        padding: 15px;
+    }
+
+    #contact-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
 }

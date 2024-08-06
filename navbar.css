@@ -39,3 +39,46 @@
     text-shadow: rgba(55, 196, 177, 0.7);
     box-shadow: rgba(55, 196, 177, 0.7);
 }
+
+/* Media queries for smaller displays */
+@media (max-width: 768px) {
+    .NavBar {
+        width: 80%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .NavBar nav {
+        height: 100%; /* Ensure the nav container has a height */
+        display: flex;
+        align-items: center; /* Center the a elements vertically */
+    }
+
+    .NavBar nav a {
+        font-size: 1.2em;
+        padding: 5px 15px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .NavBar {
+        width: 90%;
+        left: 3%;
+        top: 5%;
+        max-height: 7%;
+    }
+
+    .NavBar nav {
+        flex-direction: row;
+        align-items: center; /* Center the a elements vertically */
+        gap: 5%;
+        justify-content: center;
+        height: 100%; /* Ensure the nav container has a height */
+    }
+
+    .NavBar nav a {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

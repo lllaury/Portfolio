@@ -15,12 +15,8 @@
 .NavBar nav {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-}
-
-.NavBar.fixed {
-    position: fixed;
-    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .NavBar nav a {
@@ -63,6 +59,8 @@
 
 @media (max-width: 480px) {
     .NavBar {
+        padding-top: 0px;
+        padding-bottom: 10px;
         width: 90%;
         left: 3%;
         top: 5%;
